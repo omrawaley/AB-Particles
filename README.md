@@ -3,6 +3,10 @@ AB-Particles is a particle system I designed for the 8-bit gaming platform, the 
 
 A simple `.ino` file is included for a demo of the particle system, and it's use.
 
+![ArduboyRecording](https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/2995c6de-2e3a-4ab6-bbfb-5f2f546f0e3c)
+
+(Default settings shown above. The "explosion" can be altered by the user)
+
 ## Features
 AB-Particles is a simple, minamalistic approach to a particle system. 
 

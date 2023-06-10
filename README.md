@@ -31,6 +31,8 @@ To utilise AB-Particles in your project, you must include the `AB-Particles.cpp`
 
 From then, make an object of the class `Particles` called `particles`, as `particles` is `extern`ed in the header meaning it is known throughout all your project files. Same thing with the `Arduboy2` class, so you should call your `Arduboy2` object `arduboy`. If you have any confusion regarding this step, feel free to check out the demo included.
 
+Note that in order for the `random()` function to work properly, you must seed it with the `Arduboy2` function, `initRandomSeed()` in `setup()`.
+
 As mentioned above, you can change and configure values/settings in the `User-Setup.h` header file.
 
 ### Functions

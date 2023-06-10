@@ -27,7 +27,7 @@ Settings are configured inside the `User-Setup.h` header file.
 <img width="320" alt="image" src="https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/37e08fd6-af37-48ce-805f-e8bf59b2a65f">
 
 ## To Use:
-To utilise AB-Particles in your project, you must include the `AB-Particles.cpp` and `AB-Particles.h` files in your project directory.
+To utilise AB-Particles in your project, you must include the `AB-Particles.cpp` and `AB-Particles.h` files (available above in the `src` folder) in your project directory.
 
 From then, make an object of the class `Particles` called `particles`, as `particles` is `extern`ed in the header meaning it is known throughout all your project files. Same thing with the `Arduboy2` class, so you should call your `Arduboy2` object `arduboy`. If you have any confusion regarding this step, feel free to check out the demo included.
 

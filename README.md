@@ -18,7 +18,7 @@ Square:
 
 Each particle also has a set lifespan/lifetime, where after the lifespan of a particle is over, the particle will disapear. The lifespan of a particle is pseudo-randomly generated, leading some particles to disapear earlier than others for a nice effect.
 
-The vertical and horizontal velocity of each particle is also pseudo-randomly generated (but restricted by a limit defined by the user) meaning each and every time you reset (and update + render) the particles, you'll have an entirely new effect.
+A horizontal and vertical force (which are added to the particle's velocity) is also pseudo-randomly generated (but restricted by a limit defined by the user) meaning each and every time you reset (and update + render) the particles, you'll have an entirely new effect.
 
 You can also define how many particles you want. (30 by default).
 

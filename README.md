@@ -24,6 +24,8 @@ Each particle also has a set lifespan/lifetime, where after the lifespan of a pa
 
 A horizontal and vertical force (which are added to the particle's velocity) is also pseudo-randomly generated (but restricted by a limit defined by the user) meaning each and every time you reset (and update + render) the particles, you'll have an entirely new effect.
 
+Bigger particles (defined by `size`) will also fall faster than smaller particles, giving the "explosion" a realistic feel.
+
 You can also define how many particles you want. (30 by default).
 
 Settings are configured inside the `User-Setup.h` header file.

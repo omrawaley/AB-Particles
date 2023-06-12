@@ -53,8 +53,6 @@ class Particles
 		void render();
 
 		Particle particleArray[20];
-
-		Particle particle;
 };
 
 extern Particles particles;

@@ -28,6 +28,9 @@ void Particles::reset(float x, float y)
 
 		particle.x = x;
 		particle.y = y;
+		
+		particle.xVelocity = 0;
+		particle.yVelocity = 0;
 
 		particle.xForce = random(UserSetup::xForceMin, UserSetup::xForceMax) / 100.0;
         particle.yForce = random(UserSetup::yForceMin, UserSetup::yForceMax) / 100.0;

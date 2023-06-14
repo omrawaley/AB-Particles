@@ -30,11 +30,11 @@ namespace UserSetup
 	constexpr int yForceMin = 10;
 	constexpr int yForceMax = 15;
 
-	constexpr float sizeMin = 2;
-	constexpr float sizeMax = 5;
+	constexpr int sizeMin = 2;
+	constexpr int sizeMax = 5;
 
-	constexpr float lifetimeMin = 80;
-	constexpr float lifetimeMax = 91;
+	constexpr int lifetimeMin = 80;
+	constexpr int lifetimeMax = 91;
 
 	constexpr float gravity = 0.042;
 };

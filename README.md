@@ -16,7 +16,7 @@ Currently, it has the option for either square or circular particles, and an opt
 
 Square (not filled):
 
-﻿![image](https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/0e46cf32-d645-43fa-b703-08b712829178)
+![ArduboyRecording](https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/e45267ca-e2cc-4f21-a5a5-f2e812a22d0d)
  
  Square (filled):
  
@@ -24,7 +24,7 @@ Square (not filled):
 
  Circular (not filled):
  
-﻿![image](https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/af43e7fe-b729-4311-a7a4-51f565d86a7a)
+![ArduboyRecording(1)](https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/deb7939b-28bf-4d7d-9d8e-c15adba9d4e4)
  
 Circular (filled):
 

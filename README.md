@@ -42,7 +42,7 @@ Settings are configured inside the `User-Setup.cpp` file.
 
 <img width="255" alt="image" src="https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/65115c8c-84de-4977-8422-5925f4dc630d">
 
-One setting is also available in `User-Setup.h` but most will not need to change it unless they have memory concerns regarding their program.
+One setting is also available in `User-Setup.h`, however most will not need to change it unless they have memory concerns regarding their program.
 
 <img width="400" alt="image" src="https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/a3bf99e7-c93c-4b75-94af-4e3384674ba9">
 

@@ -1,4 +1,6 @@
 # AB-Particles Particle System
+#### V1.1.0 now here.
+
 AB-Particles is a particle system I designed for the 8-bit gaming platform, the [Arduboy](https://www.arduboy.com/). However, it can be ported to other platforms with ease. I probably will end up porting it to the ESP32.
 
 A simple `.ino` file is included for a demo of the particle system, and it's use.
@@ -10,13 +12,13 @@ A simple `.ino` file is included for a demo of the particle system, and it's use
 ## Features
 AB-Particles is a simple, minamalistic approach to a particle system. 
 
-Currently, it has the option for either square or circular particles.
+Currently, it has the option for either square or circular particles, and an option to have filled or "outlined" particles.
 
-Square:
+Square (not filled):
 
 ﻿![image](https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/0e46cf32-d645-43fa-b703-08b712829178)
  
- Circular:
+ Circular (not filled):
  
 ﻿![image](https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/af43e7fe-b729-4311-a7a4-51f565d86a7a)
 
@@ -28,9 +30,9 @@ Bigger particles (defined by `size`) will also fall faster than smaller particle
 
 You can also define how many particles you want. (30 by default).
 
-Settings are configured inside the `User-Setup.h` header file.
+Settings are configured inside the `User-Setup.cpp` header file.
 
-<img width="320" alt="image" src="https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/37e08fd6-af37-48ce-805f-e8bf59b2a65f">
+<img width="255" alt="image" src="https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/65115c8c-84de-4977-8422-5925f4dc630d">
 
 ## To Use:
 To utilise AB-Particles in your project, you must include the `AB-Particles.cpp` and `AB-Particles.h` files (available above in the `src` folder) in your project directory.

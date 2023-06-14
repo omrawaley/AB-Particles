@@ -18,9 +18,17 @@ Square (not filled):
 
 ﻿![image](https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/0e46cf32-d645-43fa-b703-08b712829178)
  
+ Square (filled):
+ 
+ ![ArduboyRecording](https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/89bcd7aa-897d-4327-a486-4ca166668603)
+
  Circular (not filled):
  
 ﻿![image](https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/af43e7fe-b729-4311-a7a4-51f565d86a7a)
+ 
+Circular (filled):
+
+![ArduboyRecording(1)](https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/d2313ebe-5d7c-46be-88af-dab557a0e7b1)
 
 Each particle also has a set lifespan/lifetime, where after the lifespan of a particle is over, the particle will disapear. The lifespan of a particle is pseudo-randomly generated, leading some particles to disapear earlier than others for a nice effect.
 

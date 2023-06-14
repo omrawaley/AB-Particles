@@ -1,5 +1,6 @@
 # AB-Particles Particle System
-#### V1.1.0 now here.
+
+**V1.1.0 now out with new settings and features.**
 
 AB-Particles is a particle system I designed for the 8-bit gaming platform, the [Arduboy](https://www.arduboy.com/). However, it can be ported to other platforms with ease. I probably will end up porting it to the ESP32.
 

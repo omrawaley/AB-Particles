@@ -20,21 +20,22 @@ limitations under the License.
 
 namespace UserSetup
 {
-	constexpr uint8_t particleAmount = 30;
+	extern uint8_t particleAmount;
 
-	constexpr bool roundParticles = false;
+	extern bool roundParticles;
+	extern bool filledParticles;
 
-	constexpr int xForceMin = -5;
-	constexpr int xForceMax = 6;
+	extern int8_t xForceMin;
+	extern int8_t xForceMax;
 
-	constexpr int yForceMin = 10;
-	constexpr int yForceMax = 15;
+	extern int8_t yForceMin;
+	extern int8_t yForceMax;
 
-	constexpr int sizeMin = 2;
-	constexpr int sizeMax = 5;
+	extern uint8_t sizeMin;
+	extern uint8_t sizeMax;
 
-	constexpr int lifetimeMin = 80;
-	constexpr int lifetimeMax = 91;
+	extern uint8_t lifetimeMin;
+ 	extern uint8_t lifetimeMax;
 
-	constexpr float gravity = 0.042;
-};
+	extern float gravity;
+}

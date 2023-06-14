@@ -47,12 +47,13 @@ class Particles
 
 	public:
 
-		void reset(float x, float y);
+		void reset(int x, int y);
 
 		void update();
 		void render();
 
-		Particle particleArray[UserSetup::particleAmount];
+		Particle particleArray[40];
+		
 };
 
 extern Particles particles;

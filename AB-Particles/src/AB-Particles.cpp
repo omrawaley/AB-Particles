@@ -18,61 +18,84 @@ limitations under the License.
 
 #include "AB-Particles.h"
 
-void Particles::reset(float x, float y)
+void Particles::reset(int x, int y)
 {
-	for(auto &particle : this->particleArray)
+	for(uint8_t i = 0; i < UserSetup::particleAmount; ++i)
 	{
-		particle.counter = random(UserSetup::lifetimeMin, UserSetup::lifetimeMax);
+		particleArray[i].counter = random(UserSetup::lifetimeMin, UserSetup::lifetimeMax);
 
-		particle.size = random(UserSetup::sizeMin, UserSetup::sizeMax);
+		particleArray[i].size = random(UserSetup::sizeMin, UserSetup::sizeMax);
 
-		particle.x = x;
-		particle.y = y;
-		
-		particle.xVelocity = 0;
-		particle.yVelocity = 0;
+		particleArray[i].x = x;
+		particleArray[i].y = y;
 
-		particle.xForce = random(UserSetup::xForceMin, UserSetup::xForceMax) / 100.0;
-        particle.yForce = random(UserSetup::yForceMin, UserSetup::yForceMax) / 100.0;
+		particleArray[i].xVelocity = 0;
+		particleArray[i].yVelocity = 0;
+
+		particleArray[i].xForce = random(UserSetup::xForceMin, UserSetup::xForceMax) / 100.0;
+        particleArray[i].yForce = random(UserSetup::yForceMin, UserSetup::yForceMax) / 100.0;
 	}
 }
 
 void Particles::update()
 {
-	for(auto &particle : this->particleArray)
+	for(uint8_t i = 0; i < UserSetup::particleAmount; ++i)
 	{
-		particle.yVelocity += UserSetup::gravity * particle.size;
+		particleArray[i].yVelocity += UserSetup::gravity * particleArray[i].size;
 
-		particle.xVelocity += particle.xForce;
-		particle.yVelocity -= particle.yForce;
+		particleArray[i].xVelocity += particleArray[i].xForce;
+		particleArray[i].yVelocity -= particleArray[i].yForce;
 
-		particle.x += particle.xVelocity;
-		particle.y += particle.yVelocity;
+		particleArray[i].x += particleArray[i].xVelocity;
+		particleArray[i].y += particleArray[i].yVelocity;
 
-		if(particle.isActive())
-			--particle.counter;
+		if(particleArray[i].isActive())
+			--particleArray[i].counter;
 	}
 }
 
 void Particles::render()
 {
-	if(!UserSetup::roundParticles)
+	if(!UserSetup::roundParticles && !UserSetup::filledParticles)
 	{
-		for(auto &particle : particleArray)
+		for(uint8_t i = 0; i < UserSetup::particleAmount; ++i)
 		{
-			if(particle.isActive())
+			if(particleArray[i].isActive())
 			{
-				arduboy.drawRect(particle.x, particle.y, particle.size, particle.size, WHITE);
+				arduboy.drawRect(particleArray[i].x, particleArray[i].y, particleArray[i].size, particleArray[i].size, WHITE);
 			}
 		}
 	}
-	else
+
+	if(!UserSetup::roundParticles && UserSetup::filledParticles)
 	{
-		for(auto &particle : particleArray)
+		for(uint8_t i = 0; i < UserSetup::particleAmount; ++i)
 		{
-			if(particle.isActive())
+			if(particleArray[i].isActive())
 			{
-				arduboy.drawCircle(particle.x, particle.y, (particle.size / 2), WHITE);
+				arduboy.fillRect(particleArray[i].x, particleArray[i].y, particleArray[i].size, particleArray[i].size, WHITE);
+			}
+		}
+	}
+
+	if(UserSetup::roundParticles && !UserSetup::filledParticles)
+	{
+		for(uint8_t i = 0; i < UserSetup::particleAmount; ++i)
+		{
+			if(particleArray[i].isActive())
+			{
+				arduboy.drawCircle(particleArray[i].x, particleArray[i].y, (particleArray[i].size / 2), WHITE);
+			}
+		}
+	}
+
+	if(UserSetup::roundParticles && UserSetup::filledParticles)
+	{
+		for(uint8_t i = 0; i < UserSetup::particleAmount; ++i)
+		{
+			if(particleArray[i].isActive())
+			{
+				arduboy.fillCircle(particleArray[i].x, particleArray[i].y, (particleArray[i].size / 2), WHITE);
 			}
 		}
 	}

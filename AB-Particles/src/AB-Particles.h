@@ -52,7 +52,7 @@ class Particles
 		void update();
 		void render();
 
-		Particle particleArray[20];
+		Particle particleArray[UserSetup::particleAmount];
 };
 
 extern Particles particles;

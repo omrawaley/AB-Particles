@@ -38,9 +38,13 @@ Bigger particles (defined by `size`) will also fall faster than smaller particle
 
 You can also define how many particles you want. (30 by default).
 
-Settings are configured inside the `User-Setup.cpp` header file.
+Settings are configured inside the `User-Setup.cpp` file.
 
 <img width="255" alt="image" src="https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/65115c8c-84de-4977-8422-5925f4dc630d">
+
+One setting is also available in `User-Setup.h` but most will not need to change it unless they have memory concerns regarding their program.
+
+<img width="400" alt="image" src="https://github.com/omrawaley/AB-Particles-Particle-System/assets/133281331/a3bf99e7-c93c-4b75-94af-4e3384674ba9">
 
 ## To Use:
 To utilise AB-Particles in your project, you must include the `AB-Particles.cpp` and `AB-Particles.h` files (available above in the `src` folder) in your project directory.
@@ -49,7 +53,7 @@ From then, make an object of the class `Particles` called `particles`, as `parti
 
 Note that in order for the `random()` function to work properly, you must seed it with the `Arduboy2` function, `initRandomSeed()` in `setup()`.
 
-As mentioned above, you can change and configure values/settings in the `User-Setup.h` header file.
+As mentioned above, you can change and configure values/settings in the `User-Setup.cpp` file.
 
 ### Functions
 
